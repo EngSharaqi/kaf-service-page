@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Get Your Business Done Online By The Best Professional Freelancers Easily And Safely For All Parties">
+
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap 5 -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Kaf</title>
+</head>
+
+<body>
+    <div class="preloader" data-preloader>
+        <div class="circle"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="row w-100">
+            <div class="container">
+                <div class="p-3 px-0 px-xl-0 w-100 d-flex justify-content-between gap-3 align-items-center">
+                    <div>
+                        <a href="/" class="d-flex justify-content-start align-items-center">
+                            <img loading="lazy" src="./assets/media/logo_en.svg" height="42" width="150" alt="kaf"
+                                title="kaf" />
+                        </a>
+                    </div>
+                    <div class="navContent-lg d-none d-xl-flex justify-content-end gap-5">
+                        <div class="d-flex gap-4 align-items-center justify-content-start">
+                            <a href="#" class="routes d-flex flex-column align-items-center gap-2 active">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>Auctions</span>
+                            </a>
+                            <a href="#" class="routes d-flex flex-column align-items-center gap-2">
+                                <i class="fa-solid fa-trophy"></i>
+                                <span>Contests</span>
+                            </a>
+                            <a href="#" class="routes d-flex flex-column align-items-center gap-2">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <span>Project</span>
+                            </a>
+                            <a href="#" class="routes d-flex flex-column align-items-center gap-2">
+                                <i class="fa-regular fa-image"></i>
+                                <span>Portfolio</span>
+                            </a>
+                            <a href="#" class="routes d-flex flex-column align-items-center gap-2">
+                                <i class="fa-solid fa-users"></i>
+                                <span>Freelancers</span>
+                            </a>
+                            <a href="#" class="routes d-flex flex-column align-items-center gap-2">
+                                <i class="fa-solid fa-comments"></i>
+                                <span>Forum</span>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="d-none d-xl-flex gap-3 align-items-center">
+                        <div class="notifications pointer relative">
+                            <i class="fa-solid fa-comment-dots"></i>
+                            <span class="count d-flex justify-content-center align-items-center">10</span>
+                        </div>
+                        <div class="notifications pointer relative">
+                            <i class="fa-solid fa-bell"></i>
+                            <span class="count d-flex justify-content-center align-items-center">10</span>
+                        </div>
+                        <div class="avatar pointer d-flex justify-content-center align-items-center" id="lgAvatarDropdown"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/media/avatar.png" loading="lazy" width="43" height="43" alt="avatar" />
+                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="lgAvatarDropdown">
+                            <li>
+                                <a class="dropdown-item underline-dropdown-item mb-2 d-flex justify-content-start gap-3 align-items-center"
+                                    href="#">
+                                    <span class="d-flex gap-3 align-items-center">
+                                        <div class="avatar pointer d-flex justify-content-center align-items-center">
+                                            <img src="./assets/media/avatar.png" loading="lazy" width="43" height="43" alt="avatar" />
+                                        </div>
+                                        <span class="d-flex flex-column" style="gap: 4px">
+                                            <span class="profileTitle">Ahmed Ali</span>
+                                            <span class="pColor jobTitle">Student</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item underline-dropdown-item mb-2 d-flex justify-content-start gap-3 align-items-center"
+                                    href="#">
+                                    <i class="fa-regular fa-circle-user"></i>
+                                    <span class="dropdownTitle">My Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item mb-2 d-flex justify-content-start gap-3 align-items-center" href="#">
+                                    <span class="w-100 d-flex justify-content-between gap-2 align-items-center">
+                                        <span class="d-flex gap-3">
+                                            <i class="fa-solid fa-moon"></i>
+                                            <span class="dropdownTitle">Dark Mode</span>
+                                        </span>
+                                        <span>
+                                            <div class="form-check form-switch d-flex justify-content-end">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                            </div>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item mb-2 d-flex justify-content-start gap-3 align-items-center" href="#">
+                                    <span class="w-100 d-flex justify-content-between gap-2 align-items-center">
+                                        <span class="d-flex gap-3">
+                                            <i class="fa-solid fa-globe"></i>
+                                            <span class="dropdownTitle">Language</span>
+                                        </span>
+                                        <span class="d-flex gap-1 align-items-center">
+                                            <span>العربية</span>
+                                            <span class="grey50">|</span>
+                                            <img src="./assets/media/Saudi.svg" alt="Arabic lang" width="23" height="17" loading="lazy" />
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item mb-2 d-flex justify-content-start gap-3 align-items-center" href="#">
+                                    <i class="fa-solid fa-gear"></i>
+                                    <span class="dropdownTitle">Account Settings</span>
+                                </a>
+                            </li>
+                            <li class="logout">
+                                <a class="dropdown-item d-flex justify-content-start gap-3 align-items-center" href="#">
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i> <span>Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex d-xl-none justify-content-end gap-4 align-items-center">
+                        <div class="avatar pointer d-flex justify-content-center align-items-center" id="avatarDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/media/avatar.png" loading="lazy" width="43" height="43" alt="avatar" />
+                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="avatarDropdown">
+                            <li>
+                                <a class="dropdown-item underline-dropdown-item mb-2 d-flex justify-content-start gap-3 align-items-center"
+                                    href="#">
+                                    <span class="d-flex gap-3 align-items-center">
+                                        <div class="avatar pointer d-flex justify-content-center align-items-center" id="avatarDropdown"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="./assets/media/avatar.png" loading="lazy" width="43" height="43" alt="avatar" />
+                                        </div>
+                                        <span class="d-flex flex-column" style="gap: 4px">
+                                            <span class="profileTitle">Ahmed Ali</span>
+                                            <span class="pColor jobTitle">Student</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item underline-dropdown-item mb-2 d-flex justify-content-start gap-3 align-items-center"
+                                    href="#">
+                                    <i class="fa-regular fa-circle-user"></i>
+                                    <span class="dropdownTitle">My Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item mb-2 d-flex justify-content-start gap-3 align-items-center" href="#">
+                                    <span class="w-100 d-flex justify-content-between gap-2 align-items-center">
+                                        <span class="d-flex gap-3">
+                                            <i class="fa-solid fa-moon"></i>
+                                            <span class="dropdownTitle">Dark Mode</span>
+                                        </span>
+                                        <span>
+                                            <div class="form-check form-switch d-flex justify-content-end">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                            </div>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item mb-2 d-flex justify-content-start gap-3 align-items-center" href="#">
+                                    <span class="w-100 d-flex justify-content-between gap-2 align-items-center">
+                                        <span class="d-flex gap-3">
+                                            <i class="fa-solid fa-globe"></i>
+                                            <span class="dropdownTitle">Language</span>
+                                        </span>
+                                        <span class="d-flex gap-1 align-items-center">
+                                            <span>العربية</span>
+                                            <span class="grey50">|</span>
+                                            <img src="./assets/media/Saudi.svg" alt="Arabic lang" width="23" height="17" loading="lazy" />
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item mb-2 d-flex justify-content-start gap-3 align-items-center" href="#">
+                                    <i class="fa-solid fa-gear"></i>
+                                    <span class="dropdownTitle">Account Settings</span>
+                                </a>
+                            </li>
+                            <li class="logout">
+                                <a class="dropdown-item d-flex justify-content-start gap-3 align-items-center" href="#">
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i> <span>Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="navContent-lg" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                            aria-controls="offcanvasExample">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-end d-flex d-xl-none" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <a href="#" class="routes mb-3 flex-wrap d-flex flex-row align-items-center gap-2 active">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Auctions</span>
+                </a>
+                <a href="#" class="routes mb-3 flex-wrap d-flex flex-row align-items-center gap-2">
+                    <i class="fa-solid fa-trophy"></i>
+                    <span>Contests</span>
+                </a>
+                <a href="#" class="routes mb-3 flex-wrap d-flex flex-row align-items-center gap-2">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>Project</span>
+                </a>
+                <a href="#" class="routes mb-3 flex-wrap d-flex flex-row align-items-center gap-2">
+                    <i class="fa-regular fa-image"></i>
+                    <span>Portfolio</span>
+                </a>
+                <a href="#" class="routes mb-3 flex-wrap d-flex flex-row align-items-center gap-2">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Freelancers</span>
+                </a>
+                <a href="#" class="routes flex-wrap d-flex flex-row align-items-center gap-2">
+                    <i class="fa-solid fa-comments"></i>
+                    <span>Forum</span>
+                </a>
+            </div>
+            <hr class="hr" />
+        </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-8">
+                    <div class="row">
+                        <p class="category mb-4">Design / Logo Design</p>
+                        <h1 class="title mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet</h1>
+                        <div class="d-flex gap-2 justify-content-between align-items-center">
+                            <span class="d-flex justify-content-start align-items-center gap-2">
+                                <span>
+                                <i class="fa-solid fa-star gold"></i>
+                                <i class="fa-solid fa-star gold"></i>
+                                <i class="fa-solid fa-star gold"></i>
+                                <i class="fa-solid fa-star gold"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                            <span class="ratingCount">4.1 (500)</span>
+                            </span>
+                            <span class="d-flex justify-content-start align-items-center gap-3 pointer">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./assets/media/slider1.png" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./assets/media/slider1.png" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./assets/media/slider1.png" class="d-block w-100" alt="...">
+                                  </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                    <div class="row mt-2">
+                        <h4 class="sectionTitle mb-3">Description</h4>
+                        <div class="card">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="d-flex justify-content-between gap-2 align-items-center mt-4 mb-3">
+                            <h4 class="sectionTitle">Service Add-Ons</h4>
+                            <span class="select-all">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span>Select All</span>
+                            </span>
+                        </div>
+                        <div class="card mb-3 pointer" onclick="selectAddOn(this)">
+                            <p class="d-flex justify-content-start align-items-start gap-3 mb-4">
+                                <span class="checkCardWrapper">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <!-- <i class="fa-solid fa-circle-check checked"></i> -->
+                                </span>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet, Lorem
+                                ipsum dolor sit amet.
+                            </p>
+                            <div class="d-flex justify-content-start align-items-center gap-2">
+                                <span class="padgePrimary">$100</span>
+                                <span class="padgePrimary">2 days</span>
+                            </div>
+                        </div>
+                        <div class="card mb-3 pointer" onclick="selectAddOn(this)">
+                            <p class="d-flex justify-content-start align-items-start gap-3 mb-4">
+                                <span class="checkCardWrapper">
+                                    <i class="fa-regular fa-circle"></i>
+                                </span>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet, Lorem
+                                ipsum dolor sit amet.
+                            </p>
+                            <div class="d-flex justify-content-start align-items-center gap-2">
+                                <span class="padgePrimary">$100</span>
+                                <span class="padgePrimary">2 days</span>
+                            </div>
+                        </div>
+                        <div class="card mb-3 pointer" onclick="selectAddOn(this)">
+                            <p class="d-flex justify-content-start align-items-start gap-3 mb-4">
+                                <span class="checkCardWrapper">
+                                    <i class="fa-regular fa-circle"></i>
+                                </span>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet, Lorem
+                                ipsum dolor sit amet.
+                            </p>
+                            <div class="d-flex justify-content-start align-items-center gap-2">
+                                <span class="padgePrimary">$100</span>
+                                <span class="padgePrimary">2 days</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4 mb-3">
+                        <h4 class="titleSection mb-3">Purchase Service</h4>
+                        <div class="card">
+                            <div class="d-flex justify-content-between align-items-center gap-2 flex-wrap">
+                                <div class="d-flex justify-content-start align-items-center gap-2 flex-wrap">
+                                    <div class="greyBg d-flex justify-content-center align-items-center gap-2">
+                                        <div class="plus pointer d-flex justify-content-center align-items-center" onclick="counterMinus()"><i class="fa-solid fa-minus"></i></div>
+                                        <input class="counter" readonly value="1" id="counter" placeholder="1" type="text" />
+                                        <div class="plus pointer d-flex justify-content-center align-items-center" onclick="counterPlus()"><i class="fa-solid fa-plus"></i></div>
+                                    </div>
+                                    <div class="greyBg text-center" id="value">$300</div>
+                                </div>
+                                <button class="btn btn-primary purchase">Purchase</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4 mb-3">
+                        <h4 class="sectionTitle mb-3 d-flex justify-content-start align-items-center gap-2 4"><i class="fa-solid fa-star gold"></i> 4.6 Service Rating . 46 Ratings</h4>
+                        <div class="card mt-2">
+                            <div class="row mb-4">
+                                <div class="col-xs-12 col-md-4 col-lg-5">
+                                    <span class="d-flex align-items-center gap-3">
+                                        <span class="ratingTitle">Work Quality</span>
+                                        <span><i class="fa-solid fa-star gold"></i> 5.0</span>
+                                    </span>
+                                </div>
+                                <div class="col-xs-12 col-md col-lg">
+                                    <i class="fa-solid fa-star gold"></i>
+                                    <i class="fa-solid fa-star gold"></i>
+                                    <i class="fa-solid fa-star gold"></i>
+                                    <i class="fa-solid fa-star gold"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="col-xs-12 col-md col-lg-4">
+                                    <div class="d-flex justify-content-start align-items-center gap-3">
+                                        <div class="progress w-100">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                          </div>
+                                          <div>4</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-xs-12 col-md-4 col-lg-5">
+                                    <span class="d-flex align-items-center gap-3">
+                                        <span class="ratingTitle">Work Quality</span>
+                                        <span><i class="fa-solid fa-star gold"></i> 5.0</span>
+                                    </span>
+                                </div>
+                                <div class="col-xs-12 col-md col-lg">
+                                    <i class="fa-solid fa-star gold"></i>
+                                    <i class="fa-solid fa-star gold"></i>
+                                    <i class="fa-solid fa-star gold"></i>
+                                    <i class="fa-solid fa-star gold"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="col-xs-12 col-md col-lg-4">
+                                    <div class="d-flex justify-content-start align-items-center gap-3">
+                                        <div class="progress w-100">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                          </div>
+                                          <div>4</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-xs-12 col-md-4 col-lg-5">
+                                    <span class="d-flex align-items-center gap-3">
+                                        <span class="ratingTitle">Work Quality</span>
+                                        <span><i class="fa-solid fa-star gold"></i> 5.0</span>
+                                    </span>
+                                </div>
+                                <div class="col-xs-12 col-md col-lg">
+                                    <i class="fa-solid fa-star gold"></i>
+                                    <i class="fa-solid fa-star gold"></i>
+                                    <i class="fa-solid fa-star gold"></i>
+                                    <i class="fa-solid fa-star gold"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="col-xs-12 col-md col-lg-4">
+                                    <div class="d-flex justify-content-start align-items-center gap-3">
+                                        <div class="progress w-100">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                          </div>
+                                          <div>4</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-xs-12 col-md-4 col-lg-5">
+                                    <span class="d-flex align-items-center gap-3">
+                                        <span class="ratingTitle">Work Quality</span>
+                                        <span><i class="fa-solid fa-star gold"></i> 5.0</span>
+                                    </span>
+                                </div>
+                                <div class="col-xs-12 col-md col-lg">
+                                    <i class="fa-solid fa-star gold"></i>
+                                    <i class="fa-solid fa-star gold"></i>
+                                    <i class="fa-solid fa-star gold"></i>
+                                    <i class="fa-solid fa-star gold"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="col-xs-12 col-md col-lg-4">
+                                    <div class="d-flex justify-content-start align-items-center gap-3">
+                                        <div class="progress w-100">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                          </div>
+                                          <div>4</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3 mb-1">
+                        <div class="card">
+                            <div class="w-100 mb-4">
+                                <div class="d-flex justify-content-start align-items-center gap-2">
+                                    <img src="./assets/media/avatar.png" width="48" height="48" alt="person" />
+                                    <div class="d-flex justify-content-center gap-0 flex-column">
+                                        <h6 class="review-name">Jane smith</h6>
+                                        <div class="d-flex align-items-center review-stars">
+                                            <i class="fa-solid fa-star gold"></i>
+                                            <i class="fa-solid fa-star gold"></i>
+                                            <i class="fa-solid fa-star gold"></i>
+                                            <i class="fa-solid fa-star gold"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <span class="time">. 30m </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing elit.... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing elit....
+                                </div>
+                            </div>
+                            <div class="w-100 mb-4">
+                                <div class="d-flex justify-content-start align-items-center gap-2">
+                                    <img src="./assets/media/avatar.png" width="48" height="48" alt="person" />
+                                    <div class="d-flex justify-content-center gap-0 flex-column">
+                                        <h6 class="review-name">Jane smith</h6>
+                                        <div class="d-flex align-items-center review-stars">
+                                            <i class="fa-solid fa-star gold"></i>
+                                            <i class="fa-solid fa-star gold"></i>
+                                            <i class="fa-solid fa-star gold"></i>
+                                            <i class="fa-solid fa-star gold"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <span class="time">. 30m </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing elit.... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing elit....
+                                </div>
+                            </div>
+                            <div class="w-100 mb-4">
+                                <div class="d-flex justify-content-start align-items-center gap-2">
+                                    <img src="./assets/media/avatar.png" width="48" height="48" alt="person" />
+                                    <div class="d-flex justify-content-center gap-0 flex-column">
+                                        <h6 class="review-name">Jane smith</h6>
+                                        <div class="d-flex align-items-center review-stars">
+                                            <i class="fa-solid fa-star gold"></i>
+                                            <i class="fa-solid fa-star gold"></i>
+                                            <i class="fa-solid fa-star gold"></i>
+                                            <i class="fa-solid fa-star gold"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <span class="time">. 30m </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing elit.... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing elit....
+                                </div>
+                            </div>
+                            <div class="w-100 mb-3">
+                                <div class="d-flex justify-content-start align-items-center gap-2">
+                                    <img src="./assets/media/avatar.png" width="48" height="48" alt="person" />
+                                    <div class="d-flex justify-content-center gap-0 flex-column">
+                                        <h6 class="review-name">Jane smith</h6>
+                                        <div class="d-flex align-items-center review-stars">
+                                            <i class="fa-solid fa-star gold"></i>
+                                            <i class="fa-solid fa-star gold"></i>
+                                            <i class="fa-solid fa-star gold"></i>
+                                            <i class="fa-solid fa-star gold"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <span class="time">. 30m </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-content">
+                                    <textarea placeholder="Write your review in here" class="typeReview w-100"></textarea>
+                                    <button class="mt-3 postReview btn btn-primary">Post Review</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-sm col-md-5 col-lg-5 col-xl-4 mt-4 mt-md-0">
+                    <div class="row">
+                        <div class="card">
+                            <h4 class="sectionTitle">Seller</h4>
+                            <div class="row mt-5">
+                                <div class="sellerAvatar relative d-block mx-auto">
+                                    <img src="./assets/media/avatar.png" width="45" height="45" alt="seller avatar" />
+                                    <div class="onlineSign"></div>
+                                </div>
+                                <h4 class="sellerName mt-3 mb-3 d-flex justify-content-center text-center gap-2">
+                                    <span>Jane Smith</span>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </h4>
+                                <h4 class="sellerLocation mt-0 mb-3 d-flex justify-content-center text-center gap-2">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>Cairo, Egypt</span>
+                                </h4>
+                                <h4 class="sellerLocation mt-0 mb-3 d-flex justify-content-center text-center gap-2">
+                                    <div class="d-flex flex-wrap justify-content-center align-items-center gap-1">
+                                        <i class="fa-solid fa-star gold"></i>
+                                        <i class="fa-solid fa-star gold"></i>
+                                        <i class="fa-solid fa-star gold"></i>
+                                        <i class="fa-solid fa-star gold"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span>4.1 (500)</span>
+                                </h4>
+                                <div class="d-flex flex-wrap align-items-center justify-content-center gap-3">
+                                    <div class="sellerPadges d-flex justify-content-center align-items-center">
+                                        <i class="fa-solid fa-award"></i>
+                                    </div>
+                                    <div class="sellerPadges d-flex justify-content-center align-items-center">
+                                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                    </div>
+                                    <div class="sellerPadges d-flex justify-content-center align-items-center">
+                                        <i class="fa-regular fa-address-card"></i>
+                                    </div>
+                                </div>
+                                <p class="sellerBio mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+                                    Lorem ipsum dolor sit amet..</p>
+                                <button class="w-100 btn btn-primary mt-3">Contact Me</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="card">
+                            <h4 class="sectionTitle">Info</h4>
+                            <div class="sellerInfo mb-3 d-flex justify-content-between align-items-center gap-2 flex-wrap">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <i class="fa-solid fa-dollar-sign"></i>
+                                    <span>Price</span>
+                                </div>
+                                <span>$10</span>
+                            </div>
+                            <div class="sellerInfo mb-3 d-flex justify-content-between align-items-center gap-2 flex-wrap">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <i class="fa-solid fa-clock"></i>
+                                    <span>Delivery Duration</span>
+                                </div>
+                                <span>1 day</span>
+                            </div>
+                            <div class="sellerInfo mb-3 d-flex justify-content-between align-items-center gap-2 flex-wrap">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <i class="fa-solid fa-basket-shopping"></i>
+                                    <span>In Progress Orders</span>
+                                </div>
+                                <span>2</span>
+                            </div>
+                            <div class="sellerInfo mb-3 d-flex justify-content-between align-items-center gap-2 flex-wrap">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <i class="fa-solid fa-users"></i>
+                                    <span>Customers</span>
+                                </div>
+                                <span>2</span>
+                            </div>
+                            <div class="sellerInfo mb-3 d-flex justify-content-between align-items-center gap-2 flex-wrap">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <i class="fa-solid fa-percent"></i>
+                                    <span>Sales</span>
+                                </div>
+                                <span>$25</span>
+                            </div>
+                            <div class="sellerInfo mb-3 d-flex justify-content-between align-items-center gap-2 flex-wrap">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <i class="fa-solid fa-list"></i>
+                                    <span>Category</span>
+                                </div>
+                                <span>Design</span>
+                            </div>
+                            <div class="sellerInfo d-flex justify-content-between align-items-center gap-2 flex-wrap">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <i class="fa-solid fa-list"></i>
+                                    <span>Subcategory</span>
+                                </div>
+                                <span>Logo Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="card">
+                            <h4 class="otherSectionTitle">Share &amp; Earn</h4>
+                            <div class="d-flex gap-3 aling-items-center share">
+                                <div class="linkedin d-flex justify-content-center align-items-center">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                                <div class="facebook d-flex justify-content-center align-items-center">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </div>
+                                <div class="whats d-flex justify-content-center align-items-center">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <div class="twitter d-flex justify-content-center align-items-center">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                                <div class="copy d-flex justify-content-center align-items-center">
+                                    <i class="fa-regular fa-copy"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4 mb-4">
+                        <div class="d-flex justify-content-between flex-wrap align-items-center gap-2">
+                            <h4 class="otherSectionTitle mb-0">Seller Other Services</h4>
+                            <span class="otherSeeMore">see more</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="d-flex align-items-center gap-2 mb-3 otherSellerWrapper">
+                            <img src="./assets/media/slider2.png" width="108" class="h-100" alt="other seller" loading="lazy" />
+                            <div class="d-flex flex-column gap-1 otherSellerContent">
+                                <p>Lorem ipsum dolor sit ame, consecteturLorem ipsum dolor...</p>
+                                <div class="d-flex justify-content-between align-items-center gap-2">
+                                    <div class="d-flex aling-items-center gap-2">
+                                        <span class="otherSellerRating"><i class="fa-solid fa-star gold"></i> 4.9 (50)</span>
+                                        <span><i class="fa-solid fa-tag"></i> $10</span>
+                                    </div>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 mb-3 otherSellerWrapper">
+                            <img src="./assets/media/slider2.png" width="108" class="h-100" alt="other seller" loading="lazy" />
+                            <div class="d-flex flex-column gap-1 otherSellerContent">
+                                <p>Lorem ipsum dolor sit ame, consecteturLorem ipsum dolor...</p>
+                                <div class="d-flex justify-content-between align-items-center gap-2">
+                                    <div class="d-flex aling-items-center gap-2">
+                                        <span class="otherSellerRating"><i class="fa-solid fa-star gold"></i> 4.9 (50)</span>
+                                        <span><i class="fa-solid fa-tag"></i> $10</span>
+                                    </div>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 mb-3 otherSellerWrapper">
+                            <img src="./assets/media/slider2.png" width="108" class="h-100" alt="other seller" loading="lazy" />
+                            <div class="d-flex flex-column gap-1 otherSellerContent">
+                                <p>Lorem ipsum dolor sit ame, consecteturLorem ipsum dolor...</p>
+                                <div class="d-flex justify-content-between align-items-center gap-2">
+                                    <div class="d-flex aling-items-center gap-2">
+                                        <span class="otherSellerRating"><i class="fa-solid fa-star gold"></i> 4.9 (50)</span>
+                                        <span><i class="fa-solid fa-tag"></i> $10</span>
+                                    </div>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 mb-3 otherSellerWrapper">
+                            <img src="./assets/media/slider2.png" width="108" class="h-100" alt="other seller" loading="lazy" />
+                            <div class="d-flex flex-column gap-1 otherSellerContent">
+                                <p>Lorem ipsum dolor sit ame, consecteturLorem ipsum dolor...</p>
+                                <div class="d-flex justify-content-between align-items-center gap-2">
+                                    <div class="d-flex aling-items-center gap-2">
+                                        <span class="otherSellerRating"><i class="fa-solid fa-star gold"></i> 4.9 (50)</span>
+                                        <span><i class="fa-solid fa-tag"></i> $10</span>
+                                    </div>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 mb-3 otherSellerWrapper">
+                            <img src="./assets/media/slider2.png" width="108" class="h-100" alt="other seller" loading="lazy" />
+                            <div class="d-flex flex-column gap-1 otherSellerContent">
+                                <p>Lorem ipsum dolor sit ame, consecteturLorem ipsum dolor...</p>
+                                <div class="d-flex justify-content-between align-items-center gap-2">
+                                    <div class="d-flex aling-items-center gap-2">
+                                        <span class="otherSellerRating"><i class="fa-solid fa-star gold"></i> 4.9 (50)</span>
+                                        <span><i class="fa-solid fa-tag"></i> $10</span>
+                                    </div>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="row mt-4 mb-1">
+                    <div class="d-flex justify-content-between align-items-center gap-2 mt-3">
+                        <h4 class="sectionTitle">Suggested Services</h4>
+                        <span class="seeMore">see more</span>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mt-3 mb-3">
+                            <div class="suggesstionsWrapper relative">
+                                <div class="fav d-flex justify-content-center align-items-center">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="w-100">
+                                    <img class="product" loading="lazy" src="./assets/media/slider2.png" alt="suggesstion" />
+                                </div>
+                                <div class="suggesstionContent">
+                                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit... </h5>
+                                    <div class="mt-3 mb-3 d-flex justify-content-start align-items-center gap-3">
+                                        <div class="d-flex align-items-center gap-2 options">
+                                            <i class="fa-solid fa-star gold"></i>
+                                            <span>4.9</span>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-2 options">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="./assets/media/avatar.png" width="32" height="32" alt="seller" loading="lazy" />
+                                            <span class="seller">Jane Smith</span>
+                                        </div>
+                                        <div class="d-flex price justify-content-start align-items-center gap-2">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            <span>$10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mt-3 mb-3">
+                            <div class="suggesstionsWrapper relative">
+                                <div class="fav d-flex justify-content-center align-items-center">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="w-100">
+                                    <img class="product" loading="lazy" src="./assets/media/slider2.png" alt="suggesstion" />
+                                </div>
+                                <div class="suggesstionContent">
+                                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit... </h5>
+                                    <div class="mt-3 mb-3 d-flex justify-content-start align-items-center gap-3">
+                                        <div class="d-flex align-items-center gap-2 options">
+                                            <i class="fa-solid fa-star gold"></i>
+                                            <span>4.9</span>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-2 options">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="./assets/media/avatar.png" width="32" height="32" alt="seller" loading="lazy" />
+                                            <span class="seller">Jane Smith</span>
+                                        </div>
+                                        <div class="d-flex price justify-content-start align-items-center gap-2">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            <span>$10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mt-3 mb-3 mb-3">
+                            <div class="suggesstionsWrapper relative">
+                                <div class="fav d-flex justify-content-center align-items-center">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="w-100">
+                                    <img class="product" loading="lazy" src="./assets/media/slider2.png" alt="suggesstion" />
+                                </div>
+                                <div class="suggesstionContent">
+                                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit... </h5>
+                                    <div class="mt-3 mb-3 d-flex justify-content-start align-items-center gap-3">
+                                        <div class="d-flex align-items-center gap-2 options">
+                                            <i class="fa-solid fa-star gold"></i>
+                                            <span>4.9</span>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-2 options">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="./assets/media/avatar.png" width="32" height="32" alt="seller" loading="lazy" />
+                                            <span class="seller">Jane Smith</span>
+                                        </div>
+                                        <div class="d-flex price justify-content-start align-items-center gap-2">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            <span>$10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mt-3 mb-3 mb-3">
+                            <div class="suggesstionsWrapper relative">
+                                <div class="fav d-flex justify-content-center align-items-center">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="w-100">
+                                    <img class="product" loading="lazy" src="./assets/media/slider2.png" alt="suggesstion" />
+                                </div>
+                                <div class="suggesstionContent">
+                                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit... </h5>
+                                    <div class="mt-3 mb-3 d-flex justify-content-start align-items-center gap-3">
+                                        <div class="d-flex align-items-center gap-2 options">
+                                            <i class="fa-solid fa-star gold"></i>
+                                            <span>4.9</span>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-2 options">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="./assets/media/avatar.png" width="32" height="32" alt="seller" loading="lazy" />
+                                            <span class="seller">Jane Smith</span>
+                                        </div>
+                                        <div class="d-flex price justify-content-start align-items-center gap-2">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            <span>$10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="./assets/js/jq.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
